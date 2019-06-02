@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Car from './car.js';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const myfirstelement = <h1>Hello React!</h1>
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//without JSX - const myelement = React.createElement('h1', {exp like a+b}, 'I do not use JSX!');
+
+// below are exported from external file car.js
+//class Car extends React.Component {
+//   render() {
+//      return <h2>Hi, I am a Car!</h2>;
+//    }  }
+
+//ReactDOM.render(myfirstelement, document.getElementById('root'));
+ReactDOM.render(<Car/>, document.getElementById('root'));
+
